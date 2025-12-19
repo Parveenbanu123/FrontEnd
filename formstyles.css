@@ -1,0 +1,146 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:palegoldenrod;
+    color: purple;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+
+  table {
+    width: 100%;
+    background: peachpuff;
+    border: 1px solid #ddd;
+    border-collapse: collapse; 
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid peachpuff;
+    vertical-align: middle;
+  }
+  
+ 
+  tr > td:first-child {
+    width: 35%;
+    font-weight: bold;
+    color: #444;
+    background: peru;
+  }
+  
+ 
+  input[type="text"],
+  input[type="number"],
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background: #ffffff;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+ 
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #2f6fed;
+    box-shadow: 0 0 0 2px rgba(47, 111, 237, 0.15);
+  }
+  
+  
+  td input[type="radio"],
+  td input[type="checkbox"] {
+    margin: 0 8px 0 6px;
+  }
+  
+ 
+  input[type="range"] {
+    width: 70%;
+    margin-right: 8px;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #2f6fed;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  button[type="reset"] {
+    background: red;
+    color: #333;
+  }
+  
+ 
+  button:hover {
+    filter: brightness(0.95);
+  }
+  
+  
+  @media (max-width: 640px) {
+    td {
+      display: block;
+      width: 100%;
+    }
+    tr > td:first-child {
+      background: transparent;
+      border-bottom: none;
+      margin-bottom: 6px;
+    }
+  }
+  
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  
+  tr > td:last-child {
+    text-align: left;       
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    display: block;        
+    width: 95%;            
+    box-sizing: border-box; 
+  }
+  
+  
+  

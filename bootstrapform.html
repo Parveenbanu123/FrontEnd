@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container" style="width: 50%;" >
+        <div>
+            <h1 class="text-center text-capitalize bg-info">Demo form</h1>
+        </div>
+        <form>
+            <div class="row">
+                <label class="col-3 form-label">Text</label>
+                <div class="col-9">
+                    <input type="text" class="form-control" placeholder="Enter Some Text">
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-3 form-label">Selection</label>
+                <div class="col-9">
+                    <select class="form-select" >
+                        <option>Option1</option>
+                        <option>Option2</option>
+                        <option>Option3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-3 form-label" name="chk">CheckBox</label>
+                <div class="col-9">
+                    <input type="checkbox" class="form-check-inline" value="val1">Value1
+                    <input type="checkbox" class="form-check-inline" value="val2">Value2
+                    <input type="checkbox" class="form-check-inline" value="val3">Value3
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-3 form-label" name="list">Option List</label>
+                <div class="col-9">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">Item1</li>
+                        <li class="list-group-item list-group-item-warning">Item2</li>
+                        <li class="list-group-item list-group-item-danger">Item3</li>
+                    </ul>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

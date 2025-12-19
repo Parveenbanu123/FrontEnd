@@ -1,0 +1,124 @@
+
+/* Basic page styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  .page-title {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Form wrapper */
+  .pg-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  /* Table */
+  .form-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .form-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+  }
+  
+  .form-table td:first-child {
+    width: 35%;
+    font-weight: bold;
+    color: #444;
+    background: #fafafa;
+  }
+  
+  /* Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Inline options (radio/checkbox) */
+  .inline-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .inline-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  /* Range slider */
+  input[type="range"] {
+    width: 70%;
+    margin-right: 8px;
+  }
+  
+  .rent-display {
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  .actions {
+    text-align: center;
+    background: #fafafa;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 4px;
+  }
+  
+  .btn-primary {
+    background: #2f6fed;
+    color: #fff;
+    border-color: #2f6fed;
+  }
+  
+  .btn-secondary {
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Simple responsive tweak */
+  @media (max-width: 640px) {
+    .form-table td {
+      display: block;
+      width: 100%;
+    }
+    .form-table td:first-child {
+      background: transparent;
+      border-bottom: none;
+      margin-bottom: 6px;
+    }
+    input[type="range"] {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 6px;
+    }
+  }
+  

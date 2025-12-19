@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Accommodation Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="page-title">PG Accommodation Form</h1>
+
+  <form class="pg-form">
+    <table class="form-table">
+      <tr>
+        <td>Full Name</td>
+        <td>
+          <input type="text" name="fullname" required pattern="[A-Za-z ]+">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Mobile Number</td>
+        <td>
+          <input type="text" name="mobile" required pattern="[0-9]{10}">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Email</td>
+        <td>
+          <input type="email" name="email" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>City</td>
+        <td>
+          <select name="city" required>
+            <option value="">Select City</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Coimbatore</option>
+            <option>Hyderabad</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Room Type</td>
+        <td class="inline-options">
+          <label><input type="radio" name="room" value="single"> Single</label>
+          <label><input type="radio" name="room" value="double"> Double</label>
+          <label><input type="radio" name="room" value="triple"> Triple</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Facilities</td>
+        <td class="inline-options">
+          <label><input type="checkbox" name="facility" value="wifi"> WiFi</label>
+          <label><input type="checkbox" name="facility" value="ac"> AC</label>
+          <label><input type="checkbox" name="facility" value="fridge"> Fridge</label>
+          <label><input type="checkbox" name="facility" value="laundry"> Laundry</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Monthly Rent</td>
+        <td>
+          <input type="range" id="rent" name="rent" min="20000" max="40000" step="500" value="20000"
+                 oninput="rentValue.textContent = this.value">
+          <span id="rentValue" class="rent-display">20000</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>PG Address</td>
+        <td>
+          <textarea rows="3" name="address"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td>ID Proof</td>
+        <td>
+          <input type="file" accept=".pdf,.doc">
+        </td>
+      </tr>
+
+      <tr>
+        <td>Payment Mode</td>
+        <td>
+          <select name="payment">
+            <option>Phone Pay</option>
+            <option>Google Pay</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="actions">
+          <input type="submit" value="Submit" accesskey="s" class="btn btn-primary">
+          <input type="reset" value="Reset" accesskey="r" class="btn btn-secondary">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>

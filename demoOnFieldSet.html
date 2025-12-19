@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Info</legend>
+            <table style="border-collapse: collapse;">
+                <tr>
+                  <td><label for="uid">UserId:</label></td>
+                  <td><input type="number" id="uid" name="uid" required tabindex="2"></td>
+                </tr>
+                <tr>
+                  <td><label for="uname">User Name:</label></td>
+                  <td><input type="text" id="uname" name="uname" required tabindex="1"></td>
+                </tr>
+                <tr>
+                  <td><label for="pwd">Password:</label></td>
+                  <td><input type="password" id="pwd" name="pwd" required></td>
+                </tr>
+                <tr>
+                  <td><label for="cpwd">Confirm Password:</label></td>
+                  <td><input type="password" id="cpwd" name="cpwd" required></td>
+                </tr>
+                <tr>
+                  <td><label for="mobile">Mobile Number:</label></td>
+                  <td><input type="tel" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email:</label></td>
+                  <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <table style="border-collapse: collapse;">
+            <tr>
+                <td><label for="skill">Skillset:</label></td>
+                <td>Java<input type="checkbox" id="skill" name="skill" value="Java">
+                Spring<input type="checkbox" id="skill" name="skill" value="Spring">
+                Angular<input type="checkbox" id="skill" name="skill" value="Angular">
+                Python<input type="checkbox" id="skill" name="skill" value="Python"></td>
+              </tr>
+              <tr>
+                <td><label for="qual">Qualification:</label></td>
+                <td><select id="qual">
+                    <option></option>
+                    <option value="M.Tech">M.Tech</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="M.C.A">M.C.A</option>
+                    <option value="B.Sc">B.Sc</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <button type="submit" accesskey="s">Submit</button>
+                  <button type="reset" accesskey="r">Reset</button>
+                </td>
+              </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>            
+</html>
