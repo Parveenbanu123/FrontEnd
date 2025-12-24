@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Web Page with Media</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 50px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      flex: 1 100%;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .search-bar input[type="text"] {
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+    }
+    .search-bar input[type="submit"] {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      background-color: #ff6600;
+      color: #fff;
+      cursor: pointer;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    main h2 {
+      color: #333;
+    }
+    
+    main img {
+        width: 250px;   
+        height: 200px;  
+        object-fit: cover; 
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        margin: 10px;
+    }
+
+    main video, main audio {
+      margin: 20px auto;
+      display: block;
+      max-width: 80%;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Header Heading -->
+    <h1>My Simple Website</h1>
+    
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <form>
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <h2>Image Gallery</h2>
+    <img src="flower.jpg" alt="Sample Image 1">
+    <img src="flower1.jpg" alt="Sample Image 2">
+    <img src="flower2.jpg" alt="Sample Image 3">
+
+    <h2>Audio Player</h2>
+    <audio controls>
+      <source src="sample-3s.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Player</h2>
+    <video controls>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Simple Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

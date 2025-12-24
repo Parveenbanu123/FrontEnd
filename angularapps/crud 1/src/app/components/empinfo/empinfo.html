@@ -1,0 +1,17 @@
+<div class="card mt-3" *ngIf="emp">
+    <div class="card-header bg-primary text-white">
+      Employee Details
+    </div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>ID:</strong> {{ emp.eid }}</li>
+        <li class="list-group-item"><strong>Name:</strong> {{ emp.ename }}</li>
+        <li class="list-group-item"><strong>Designation:</strong> {{ emp.desg }}</li>
+        <li class="list-group-item"><strong>Email:</strong> {{ emp.email }}</li>
+        <li class="list-group-item"><strong>Salary:</strong> {{ emp.salary | currency:'INR' }}</li>
+        <li class="list-group-item"><strong>Mobile:</strong> {{ emp.mobile }}</li>
+        <li class="list-group-item"><strong>Dept:</strong> {{ emp.dept }}</li>
+      </ul>
+    </div>
+  </div>
+  

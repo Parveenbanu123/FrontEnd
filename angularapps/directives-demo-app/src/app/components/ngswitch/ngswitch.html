@@ -1,0 +1,18 @@
+<div>
+   <button class="btn btn-primary" (click)="setChoice('home')">Home</button>
+    <button class="btn btn-primary" (click)="setChoice('about')">About</button>
+    <button class="btn btn-primary" (click)="setChoice('contact')">Contact</button>
+
+     <!-- <div [ngSwitch]="choice">
+        <p *ngSwitchCase="'home'">This is Home Page</p>
+        <p *ngSwitchCase="'about'">This is About Page</p>
+        <p *ngSwitchCase="'contact'">This is Contact Page</p>
+        <p *ngSwitchDefault>Select any option</p>
+    </div> -->
+    @switch (choice) {
+        @case ('home') {<p>This is Home Page</p>}
+        @case ('about') {<p>This is About Page</p>}
+        @case ('contact') {<p>This is Contact Page</p>}
+        @default {<p>Select an option</p>}
+    }
+</div>

@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "eid": 1,
+      "ename": "John Doe",
+      "desg": "Manager",
+      "email": "john@example.com",
+      "salary": 50000,
+      "mobile": 1234567890,
+      "dept": "HR",
+      "id": "8ece"
+    },
+    {
+      "eid": 2,
+      "ename": "Jane Smith",
+      "desg": "Developer",
+      "email": "jane@example.com",
+      "salary": 40000,
+      "mobile": 9876543210,
+      "dept": "IT",
+      "id": "807b"
+    },
+    {
+      "eid": 3,
+      "ename": "Mike Johnson",
+      "desg": "Designer",
+      "email": "mike@example.com",
+      "salary": 35000,
+      "mobile": 1122334455,
+      "dept": "Design",
+      "id": "cacc"
+    },
+    {
+      "id": "196c",
+      "eid": 2,
+      "ename": "Naresh",
+      "desg": "CEO",
+      "email": "naresh@gmail.com",
+      "mobile": "1231401404",
+      "salary": 1e+32,
+      "dept": "BusinessOperation"
+    }
+  ]
+}

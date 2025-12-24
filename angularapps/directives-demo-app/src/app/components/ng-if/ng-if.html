@@ -1,0 +1,15 @@
+<div>
+    <h1>ngIf Demo</h1>
+    <button class="btn btn-primary" (click)="login()">{{isLoggedIn  ?"Logout":"Login"}}</button>
+    <!-- <h3 *ngIf="isLoggedIn">Welcome {{uname}}</h3> -->
+    <h3 *ngIf="isLoggedIn;else elseblock">Welcome {{uname}}</h3>
+    <ng-template #elseblock>
+        <h3>{{uname}},Thank you,Visit again...</h3>
+    </ng-template>
+
+    
+<!-- <button *ngIf="isActive" class="btn btn-success" (click)="toggle()">Active</button>
+<button *ngIf="!isActive" class="btn btn-danger" (click)="toggle()">Inactive</button> -->
+
+
+</div>

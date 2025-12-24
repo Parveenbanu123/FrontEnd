@@ -1,0 +1,22 @@
+<div>
+    <h3>{{myname|reverse|uppercase}}</h3>
+    <h3 class="{{r|result}}">{{r}}</h3>
+    <h3>{{stud|json}}</h3>
+    
+    <h3>Name:{{stud.name}}</h3>
+    <h3>Id:{{stud.id}}</h3>
+    <h3>Marks:{{stud.marks}}</h3>
+    <button (click)="getResult()">Result</button>
+    <h3 class="{{r|result}}">Result:{{r}}</h3>
+
+    <h3>{{myname|length}}</h3>
+    <h3>{{mobileNum|maskmobilenum}}</h3>
+    <h3>Pure: {{nums|even}}</h3>
+    <h3>Impure: {{nums|evenimpure}}</h3>
+
+    <button (click)="pushNumber()">PushNumber</button>
+    <button (click)="addNumbersImmutable()">AddNumberImmutable</button>
+
+    <h3>Pure: {{nums|even}}</h3>
+    <h3>Impure: {{nums|evenimpure}}</h3>
+</div>

@@ -1,0 +1,33 @@
+<div>
+    <div>
+        <label for="num1">Number1:</label>
+        <input type="number" id="num1" name="num1" [(ngModel)]="num1">
+    </div>
+    <div>
+        <label for="num2">Number2:</label>
+        <input type="number" id="num2" name="num2" [(ngModel)]="num2">
+    </div>
+    <div>
+        <button class="btn btn-primary" (click)="calc('ADD')">ADD</button>
+        <button class="btn btn-primary"(click)="calc('SUB')">SUB</button>
+        <button class="btn btn-primary"(click)="calc('MUL')">MUL</button>
+        <button class="btn btn-primary"(click)="calc('DIV')">DIV</button>
+    </div>
+   
+        @switch (op) {
+            @case ('ADD') {
+                <h3>Addition:{{res}}</h3>
+            }
+            @case ('SUB') {
+                <h3>Subtraction:{{res}}</h3>
+            }
+            @case ('MUL') {
+                <h3>Multiplication:{{res}}</h3>
+            }
+            @case ('DIV') {
+                <h3>Division:{{res}}</h3>
+            }
+            @default {<h3>Select an Option</h3>}
+        }
+    
+</div>

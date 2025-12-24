@@ -1,0 +1,16 @@
+<div>
+    <form>
+        <div>
+            <label for="uname" class="form-label">UserName</label>
+            <input class="form-control" type="text" id="uname" name="uname" [(ngModel)]="uname" required>
+        </div>
+        <div>
+            <label for="pwd" class="form-label">Password</label>
+            <input class="form-control" type="password" id="pwd" name="pwd" [(ngModel)]="pwd" required>
+        </div>
+        <div>
+            <button [disabled]="!(uname&&pwd)" [ngStyle]="{'background-color':(uname&&pwd)?'blue':'red', 'color':'white'}" (click)="login()">Login</button>
+            <p [ngClass]="{'ok':status==='success','notok':status==='failed'}">{{msg}}</p>
+        </div>
+    </form>
+</div>

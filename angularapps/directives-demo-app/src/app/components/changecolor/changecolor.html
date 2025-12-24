@@ -1,0 +1,7 @@
+<div>
+    <button class="button btn btn-primary" (click)="changeBgColor()">{{checkcolor?"gray":"cyan"}}</button>
+    <h1 *ngIf="checkcolor;else elseblock">Background Color Changed to cyan,U can change to Gray now</h1>
+    <ng-template #elseblock>
+        <h1>Background Color Changed to Gray,U can change to Cyan now</h1>
+    </ng-template>
+</div>

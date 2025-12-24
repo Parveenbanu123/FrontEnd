@@ -1,0 +1,29 @@
+<div>
+    <h1>Built-In Pipes Demo</h1>
+    <h2>{{myname|uppercase}}</h2>
+    <h2>{{myname|titlecase}}</h2>
+    <h2>{{course|lowercase}}</h2>
+
+    <h2>{{today}}</h2>
+    <h2>{{today|date:'dd-MM-yyyy'}}</h2>
+    <h2>FullDate:{{today|date:'fullDate'}}</h2>
+    <h2>Shortdate:{{today|date:'short'}}</h2>
+    <h2>MediumTime:{{today|date:'mediumTime'}}</h2>
+    <h2>DateAndTime:{{today|date:'dd-MM-yyyy HH-mm-ss a'}}</h2>
+
+    <h3>{{cost|currency:'INR'}}</h3>
+    <h3>{{cost|currency:'USD'}}</h3>
+    <h3>{{cost|currency:'EUR'}}</h3>
+    <h3>{{cost|currency:'JPY'}}</h3>
+
+    <h3>{{discount|percent}}</h3>
+
+    <h3>{{emp|json}}</h3>
+
+    <h3>{{names}}</h3>
+    <h3>{{names|slice:0:2}}</h3>
+    <h3>{{names|slice:3:6}}</h3>
+
+    <h3>{{gender|i18nSelect:genderMap}}{{myname}}</h3>
+    <h3>{{count|i18nPlural:msgMap}}</h3>
+</div>

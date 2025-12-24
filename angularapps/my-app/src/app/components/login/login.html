@@ -1,0 +1,20 @@
+<div class="border border-3 border-dark mt-5 mb-4 " style="width: 400px;">
+    <h3>{{appName}}</h3>
+    <form class="p-4">
+        <div>
+            <label class="form-label" for="uname">userName</label>
+            <input class="form-control" type="text" id="uname" name="uname" [(ngModel)]="uname">
+        </div>
+        <div>
+            <label class="form-label" for="pwd">Password</label>
+            <input class="form-control" type="password" id="pwd" name="pwd" [(ngModel)]="pwd">
+        </div>
+        <div>
+            <button class="btn btn-outline-primary mt-3" (click)="login()">Login</button>
+        </div>
+    </form>
+</div>
+<!-- <div>
+    <h5>{{uname}}</h5>
+    <h5>{{pwd}}</h5>
+</div> -->

@@ -1,0 +1,51 @@
+{
+  "emplist": [
+    {
+      "id": "338",
+      "name": "Parveen",
+      "designation": "Developer",
+      "email": "parveen123@gmail.com",
+      "mobile": "9876543210",
+      "salary": 40000,
+      "department": "IT"
+    },
+    {
+      "id": "349",
+      "name": "Sathis",
+      "designation": "Developer",
+      "email": "sathis123@gmail.com",
+      "mobile": "9876543210",
+      "salary": 50000,
+      "department": "IT"
+    },
+    {
+      "id": "347",
+      "name": "Saranya",
+      "designation": "Tester",
+      "email": "saranya123@gmail.com",
+      "mobile": "9876543210",
+      "salary": 45000,
+      "department": "Testing"
+    },
+    {
+      "id": "6c12",
+      "eid": 1,
+      "ename": "ParveenBanu",
+      "desg": "Developer",
+      "email": "parveenbanu1303@gmail.com",
+      "mobile": "9876543210",
+      "salary": 50000,
+      "dept": "IT"
+    },
+    {
+      "id": "1800",
+      "eid": 1,
+      "ename": "Parveen",
+      "desg": "Developer",
+      "email": "parveenbanu1303@gmail.com",
+      "mobile": "9876543210",
+      "salary": 50000,
+      "dept": "IT"
+    }
+  ]
+}

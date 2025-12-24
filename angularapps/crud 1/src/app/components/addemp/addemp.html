@@ -1,0 +1,85 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-header bg-dark text-white">
+      <h3>Add Employee</h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="empform" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label class="form-label" for="eid">Employee Id</label>
+          <input type="number" class="form-control" id="eid" formControlName="eid">
+          <div class="text-danger" *ngIf="empform.get('eid')?.touched && empform.get('eid')?.hasError('required')">
+            Employee Id is required
+          </div>
+          <div class="text-danger" *ngIf="empform.get('eid')?.touched && empform.get('eid')?.hasError('min')">
+            Employee Id must be non‑zero and positive
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="ename">Employee Name</label>
+          <input type="text" class="form-control" id="ename" formControlName="ename">
+          <div class="text-danger" *ngIf="empform.get('ename')?.touched && empform.get('ename')?.hasError('required')">
+            Employee Name is required
+          </div>
+          <div class="text-danger" *ngIf="empform.get('ename')?.touched && empform.get('ename')?.hasError('minlength')">
+            Employee Name must be at least 3 characters
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="desg">Designation</label>
+          <input type="text" class="form-control" id="desg" formControlName="desg">
+          <div class="text-danger" *ngIf="empform.get('desg')?.touched && empform.get('desg')?.hasError('required')">
+            Designation is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+          <div class="text-danger" *ngIf="empform.get('email')?.touched && empform.get('email')?.hasError('required')">
+            Email is required
+          </div>
+          <div class="text-danger" *ngIf="empform.get('email')?.touched && empform.get('email')?.hasError('email')">
+            Enter a valid email address
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="mobile">Mobile</label>
+          <input type="tel" class="form-control" id="mobile" formControlName="mobile">
+          <div class="text-danger" *ngIf="empform.get('mobile')?.touched && empform.get('mobile')?.hasError('required')">
+            Mobile number is required
+          </div>
+          <div class="text-danger" *ngIf="empform.get('mobile')?.touched && empform.get('mobile')?.hasError('pattern')">
+            Mobile number must be 10 digits
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="salary">Salary</label>
+          <input type="number" class="form-control" id="salary" formControlName="salary">
+          <div class="text-danger" *ngIf="empform.get('salary')?.touched && empform.get('salary')?.hasError('required')">
+            Salary is required
+          </div>
+          <div class="text-danger" *ngIf="empform.get('salary')?.touched && empform.get('salary')?.hasError('min')">
+            Salary must be at least 1000
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="dept">Department</label>
+          <input type="text" class="form-control" id="dept" formControlName="dept">
+          <div class="text-danger" *ngIf="empform.get('dept')?.touched && empform.get('dept')?.hasError('required')">
+            Department is required
+          </div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary" [disabled]="empform.invalid">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
